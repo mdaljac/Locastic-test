@@ -1,0 +1,29 @@
+body .wrapper header .nav-wrapper {
+  width: 100%; }
+  body .wrapper header .nav-wrapper .mobile-close-icon {
+    background-color: #00a1d1; }
+body .wrapper .slider {
+  height: 400px; }
+  body .wrapper .slider h1 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+    padding-top: 140px; }
+body .wrapper .content .content-wrapper {
+  columns: 1; }
+  body .wrapper .content .content-wrapper article h2 {
+    font-size: 32px;
+    line-height: 40px; }
+  body .wrapper .content .content-wrapper article a {
+    margin-bottom: 38px; }
+body .wrapper .content .load-button {
+  padding-bottom: 40px; }
+  body .wrapper .content .load-button button {
+    width: 340px; }
+body .wrapper .contact-form .form-wrapper {
+  padding: 10px 10px; }
+body .wrapper footer {
+  padding: 20px 0px; }
+  body .wrapper footer .title-div, body .wrapper footer .author-div {
+    width: 100%;
+    padding: 0px; }

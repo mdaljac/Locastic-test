@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Mustafa Daljac">
+		<meta name="viewport" content="width= device-width, initial-scale= 1.0, maximum-scale=1, minimum-scale=1">
+		<meta charset="UTF-8">
+		<title>Testing</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href="styles/style-tablet.css">
+		<link rel="stylesheet" media="(max-width: 640px)" href="styles/style-mobile.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="JS/jquery-3.1.0.min.js"></script>
+		<script src="JS/jQuery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<header>		
+				<div class="logo">
+					<img src="images/logo.png" />
+				</div>
+
+
+				<div class="mobile-nav">
+					<img class="mobile-icon" src="images/hamburger-icon.png">
+				</div>
+
+
+				<div class="nav-wrapper">
+					<div class="mobile-close-icon"><img src="images/close-icon.png"></div>
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Works</a>
+								<ul>
+									<li>Manistra na pome</li>
+									<li>Biftek - Medium rare+</li>
+									<li>Picigin 2016</li>
+									<li>Jos jedan link eto tako</li>
+								</ul>
+							</li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div class="slider">
+				<h1>Moj najlišši naslov ikad</h1>
+
+				<div class="slider_nav">
+						<span class="active"></span><span></span><span></span>
+				</div>
+			</div>
+
+			<section class="content">
+				<div class="content-wrapper">
+					<template class="article-template">
+						<article>
+							<img src={{image}} />
+							<h2>{{header}}</h2>
+							<p>{{paragraph}}</p>
+							<a href="#">{{link}}</a>
+						</article>
+					</template>
+				</div>
+				<div class="load-button">
+					<button type="button">Load More</button>
+				</div>
+			</section>
+
+			<section class="contact-form">
+
+				<h1>Contact Form</h1>
+
+				<div class="form-wrapper">
+					<form id="contact-form">
+						<label for="name">Contact name</label>
+						<span class="error"></span>
+						<input type="text" name="name" id="name">
+
+						<label for="email">Email address</label>
+						<span class="error"></span>
+						<input type="email" name="email" id="email">
+
+						<label for="message">Message</label>
+						<span class="error"></span>
+						<textarea cols="65" rows="12" name="message" id="message"></textarea>
+
+						<input type="submit" value="Send Message">
+					</form>
+
+				</div>
+			</section>
+
+			<footer>
+				<div class="title-div">2016 Locastic Teest Page</div>
+				<div class="author-div">By Frontend Developer</div>
+			</footer>
+
+		</div>
+
+	</body>
+</html>

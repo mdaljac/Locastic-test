@@ -1,0 +1,273 @@
+@import 'bourbon/_bourbon.scss'
+
+//drugi url sa absolutnom adresom je za IE, ali se ne prikazuje baš dobro u pregledniku
+$custom_cursor: url('../images/pointer.cur'), url('images/pointer.cur'), pointer
+
+
+*
+	margin: 0
+	padding: 0
+	font-family: Roboto, sans-serif
+
+body
+
+	.wrapper, header, footer, .slider, .slider_nav, .content, .contact-form
+		width: 100%
+
+	.wrapper
+		position: relative
+
+		header
+			background-color: #00a1d1
+			border-radius: 2px 2px 0px 0px
+			+clearfix()
+			
+
+			.mobile-nav
+				display: none
+				.mobile-icon
+					display: none
+					cursor: $custom_cursor
+					float: right
+
+			.logo
+				display: inline-block
+				margin: 23px auto 22px 38px
+				float: left
+
+				img
+					vertical-align: top
+
+			.nav-wrapper
+				max-width: 880px
+				float: right
+				display: block
+
+				.mobile-close-icon
+					display: none
+					float: right
+
+					img
+						cursor: $custom_cursor
+				
+				nav
+					ul
+						list-style-type: none
+						z-index: 1
+
+						li
+							display: inline-block
+							position: relative
+							padding: 23px 37px 25px 28px
+							cursor: $custom_cursor
+							+transition(300ms)
+
+							&:hover
+								background-color: #008ab3
+
+								> ul
+									visibility: visible
+									//display: block
+									opacity: 1
+
+							> ul
+								visibility: hidden
+								//display: none
+								opacity: 0
+								+transition(opacity, 300ms)
+								+position(absolute, 75px 0px null null)
+								padding: 13px 0px 12px 0px
+								text-align: right
+								width: 254px
+								background-color: #333333
+								
+
+								li
+									display: block
+									padding: 0 26px 0 0
+									font-size: 18px
+									color: #ffffff
+									line-height: 36px
+
+							a
+								text-decoration: none
+								font-size: 22px
+								color: #ffffff
+								cursor: $custom_cursor
+
+		.slider
+			position: relative
+			height: 250px
+			background:
+				image: url('../images/slider-image.png')
+				size: cover
+				repeat: no-repeat
+				position: center center
+
+			h1
+				max-width: 540px
+				font:
+					size: 50px
+					weight: bold
+				color: #ffffff
+				line-height: 36px
+				margin: 0 auto
+				padding: 107px 5px 0px 5px
+
+			.slider_nav
+				position: absolute
+				text-align: center
+				bottom: 17px
+
+				span
+					background-color: white
+					+size(15px)
+					border-radius: 50%
+					display: inline-block
+					margin-right: 15px
+					cursor: $custom_cursor
+
+					&.active
+						background-color: #008ab3
+
+		.content
+			.content-wrapper
+				columns: 3
+				padding: 30px 10px
+
+				.article-template
+					display: none
+
+				article
+					max-width: 650px
+					padding: 0
+
+					img
+						max-width: 100%
+						height: auto !important
+
+					h2
+						font:
+							size: 40px
+							weight: bold
+						color: #4a4a4a
+						line-height: 44px
+
+					p
+						font-size: 22px
+						color: #747474
+						line-height: 34px
+						margin-top: 11px
+						margin-bottom: 8px
+
+					a
+						display: inline-block
+						font:
+							size: 22px
+							weight: bold
+						color: #00a1d1
+						line-height: 34px
+						text-decoration: none
+						margin-bottom: 50px
+						cursor: $custom_cursor
+
+						&:hover
+							text-decoration: underline
+
+			.load-button
+				text-align: center
+				padding: 0px 10px 50px 10px
+
+				button
+					width: 320px
+					height: 60px
+					background: #b0b0b0
+					border-radius: 4px
+					border: none
+					font-size: 22px
+					color: #ffffff
+					line-height: 36px
+					cursor: $custom_cursor
+					+transition()
+
+					&:hover
+						background: #4a4a4a
+
+		.contact-form
+			background-color: #e9e9e9
+
+			h1
+				font-size: 50px
+				color: #4a4a4a
+				line-height: 36px
+				text-align: center
+				padding-top: 60px
+
+			.form-wrapper
+				max-width: 500px
+				padding: 40px 0px
+				margin: 0 auto
+
+				label, span, input, input[type="submit"], textarea
+					display: block
+
+				label, input
+					line-height: 36px
+					font-size: 22px
+					color: #4a4a4a
+
+				label
+					margin: 20px 0px 8px 0px
+
+				span.error
+					color: red
+
+				input, textarea
+					background-color: #ffffff
+					border-radius: 4px
+					width: 100%
+					border: none
+					outline-color: #00a1d1
+					cursor: $custom_cursor
+					text-indent: 25px
+
+				textarea
+					resize: none
+					overflow: hidden
+					padding-top: 5px
+
+				input
+					height: 80px
+					text-shadow: -0.1px 0px 0.1px
+
+					&:-webkit-autofill
+						box-shadow: 0 0 0px 1000px white inset
+
+					&[type="submit"]
+						background-color: #00a1d1
+						height: 80px
+						padding: 0px
+						color: #ffffff
+						margin: 20px auto
+
+		footer
+			height: 70px
+			background-color: #4a4a4a
+			border-radius: 0px 0px 2px 2px
+			+display(flex)
+			+align-items(center)
+			+justify-content(space-between)
+			+flex-wrap(wrap)
+
+			.title-div, .author-div
+				font-size: 16px
+				color: #ffffff
+				line-height: 36px
+				text-align: center
+
+			.title-div
+				padding-left: 10px
+
+			.author-div
+				padding-right: 10px
+				

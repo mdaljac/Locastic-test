@@ -1,0 +1,41 @@
+{
+	"articles":
+	[
+		{
+			"image" : "images/content-image.png",
+			"header" : "Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life",
+			"paragraph" : "Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"link" : "View full article"
+		},
+		{
+			"image" : "images/content-image.png",
+			"header" : "Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life",
+			"paragraph" : "Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"link" : "View full article"
+		},
+		{
+			"image" : "images/content-image.png",
+			"header" : "Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life",
+			"paragraph" : "Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"link" : "View full article"
+		},
+		{
+			"image" : "images/content-image.png",
+			"header" : "Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life",
+			"paragraph" : "Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"link" : "View full article"
+		},
+		{
+			"image" : "images/content-image.png",
+			"header" : "Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life",
+			"paragraph" : "Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"link" : "View full article"
+		},
+		{
+			"image" : "images/content-image.png",
+			"header" : "Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life",
+			"paragraph" : "Roboto Regular, 22px, Spacing 34px - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+			"link" : "View full article"
+		}
+	]
+}
