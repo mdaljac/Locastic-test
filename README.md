@@ -1,6 +1,6 @@
 # Locastic-test
-Test from Locastic company when applying for job
-This website is made on this template received from the company: http://slicestic.com/frontend-test/
+Test from Locastic company when applying for job.
+Website is made on this template received from the company: http://slicestic.com/frontend-test/
 
 Test zadatak tvrtke Locastic kod prijave za posao
 
